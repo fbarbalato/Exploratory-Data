@@ -14,6 +14,7 @@ dataN<-filter(data,Date >= "2007-02-01" & Date <= "2007-02-02")
 dataN$day<- weekdays(as.Date(dataN$Date))
 
 png(file="plot2.png",width = 480, height = 480, units = "px")
+
 with(dataN, plot(as.numeric(as.character(Global_active_power)),type="l",
 	ylab="Global Active Power (Kilowats)",
 	xlab="",
